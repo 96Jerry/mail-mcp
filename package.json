@@ -1,0 +1,25 @@
+{
+  "name": "mail-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "네이버·다음 메일을 IMAP으로 읽어 Claude에 넘기는 읽기 전용 MCP 서버",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "check": "node dist/check.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "html-to-text": "^10.0.1",
+    "imapflow": "^2.11.0",
+    "mailparser": "^3.14.3",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "@types/mailparser": "^3.9.0",
+    "@types/node": "^24.19.2",
+    "typescript": "^5.9.3"
+  }
+}
